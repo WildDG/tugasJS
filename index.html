@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"/>
+    <title>Konversi Suhu</title>
+</head>
+<body style="text-align:center; background-color: cyan" id="body">
+    <div class="container">
+        <form class="text-center border border-light p-5">
+            <div class="h4 mb-4" id="date-part"></div>
+            <div class="h4 mb-4" id="time-part"></div>
+            <p class="h4 mb-4">Konversi Suhu</p>
+            <div class="h4 mb-12">
+              <select name="from" id="from">
+                <option value="cel">Celcius</option>
+                <option value="far">Farenheit</option>
+                <option value="rea">Reamur</option>
+              </select>
+              to
+              <select name="to" id="to">
+                <option value="cel">Celcius</option>
+                <option value="far">Farenheit</option>
+                <option value="rea">Reamur</option>
+              </select>
+            </div>
+            <input type="number" id="nilaiAwal" class="form-control mb-4" placeholder="Nilai AWal"/>
+            <p class="h6 mb-4">=</p>
+            <input type="number" id="nilaiAkhir" class="form-control mb-4" placeholder="Hasil" disabled />
+          </form>
+        <input type="text" id="color" class="form-control" placeholder="Masukkan Warna"/>
+        <button type="button" id="ubahWarna" class="btn-primary">
+            click to set
+        </button>
+    </div>
+    <script src="./convert.js"></script>
+</body>
+</html>
